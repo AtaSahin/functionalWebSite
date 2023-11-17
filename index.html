@@ -21,42 +21,44 @@
     }
 
     #login-form {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgb(7, 7, 7);
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 20%;
+      height: 35%;
     }
 
     #video-background {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: -1;
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
   </style>
 </head>
 <body>
 
   <!-- Video BG -->
   <video autoplay muted loop id="video-background">
-    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    <source src="./assets/video (2160p).mp4"  type="video/mp4">
+
   </video>
 
   <div id="login-container">
     <div id="login-form" class="col-md-4">
-      <h2 class="mb-4">Login</h2>
+      <h2 class="mb-4" style="color: white;">Login</h2>
       <form action="landingPage.html" method="post">
-        <div class="form-group">
-          <label for="username">Kullanıcı Adı:</label>
-          <input type="text" class="form-control" id="username" name="username" placeholder="Kullanıcı Adı" required>
+        <div class="form-group"style="color: white;">
+          <label for="username" style="color: white;">Kullanıcı Adı:</label>
+          <input type="text" class="form-control" id="username" name="username" placeholder="Kullanıcı Adı" required style="color: white;">
         </div>
         <div class="form-group">
-          <label for="password">Şifre:</label>
+          <label for="password" style="color: white;">Şifre:</label>
           <input type="password" class="form-control" id="password" name="password" placeholder="Şifre" required>
         </div>
 
