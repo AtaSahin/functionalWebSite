@@ -24,9 +24,9 @@
       background-color: rgb(7, 7, 7);
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       width: 20%;
       height: 35%;
+      box-shadow: 2px 2px 10px rgba(253, 249, 249, 0.2); 
     }
 
     #video-background {
@@ -37,6 +37,20 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+.loginBtn{
+color: white;
+background-color: orange;
+margin-top: 20px;
+border-radius: 15px;
+width: 100px;
+height: 40px;
+border: orange;
+box-shadow: 2px 2px 5px rgba(255, 251, 251, 0.5); 
+}
+.loginBtn:hover{
+  background-color: white;
+  color: black;
 }
 
   </style>
@@ -65,7 +79,7 @@
       </form>
 
       <!-- Yeni sayfaya götüren giriş yap butonu -->
-      <button onclick="redirectToNewPage()" class="btn btn-success mt-3">Giriş Yap</button>
+      <button onclick="redirectToNewPage()" class="loginBtn">Giriş Yap</button>
     </div>
   </div>
 
