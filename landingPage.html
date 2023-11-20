@@ -96,10 +96,10 @@
   
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./assets/bannerImage.jpg" class="d-block w-100 " style="height: 800px; " alt="Slide 1">
+        <img src="../src/assets/bannerImage_2.jpg" class="d-block w-100 " style="height: 800px; " alt="Slide 1">
       </div>
       <div class="carousel-item">
-        <img src="./assets/bannerImage_2.jpg" class="d-block w-100 " style="height: 800px;" alt="Slide 2"><!--  w-100 sayfanın genişlik olarak hepsini kapsaması için-->
+        <img src="../src/assets/bannerImage.jpg" class="d-block w-100 " style="height: 800px;" alt="Slide 2"><!--  w-100 sayfanın genişlik olarak hepsini kapsaması için-->
       </div>
    
     </div>
@@ -114,13 +114,17 @@
   </div>
   
 <div class="container">
-  <div class="box">İş 1</div>
-  <div class="box">İş 2</div>
-  <div class="box">İş 3</div>
-  <div class="box">İş 4</div>
+  <div class="box" onclick="goToPage('is_1.html')">İş 1</div>
+  <div class="box" onclick="goToPage('is_2.html')">İş 2</div>
+  <div class="box" onclick="goToPage('is_3.html')">İş 3</div>
+  <div class="box" onclick="goToPage('is_4.html')">İş 4</div>
 
 </div>
-
+<script>
+  function goToPage(page) {
+    window.location.href = page;
+  }
+</script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
